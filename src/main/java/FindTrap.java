@@ -6,9 +6,13 @@ import java.util.regex.Pattern;
 public class FindTrap {
     public static void main(String[] args) {
 
-        String source = "Hey, did you think there is a TRAP!!!";
+        String sourceOne = "There is a trap.";
+        String sourceTwo = "Hey, did you think there is a TRAP!!!";
+        String sourceThree = "This goes traaa!!!";
         String regex = "trap";
-        findTrap(source, regex);
+        findTrap(sourceOne, regex);
+        findTrap(sourceTwo, regex);
+        findTrap(sourceThree, regex);
     }
 
     public static void findTrap(String sourceText, String regex){
